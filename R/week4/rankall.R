@@ -57,8 +57,8 @@ rankall <- function(outcome, num = "best") {
         # Row bind the finding to output data.frame
         allHospitalByRanking <- rbind(allHospitalByRanking, 
                                       data.frame(
-                                          Hospital = hospitals_rank[ranking,"Hospital.Name"],
-                                          State = hospitals_in_state[1,"State"])
+                                          hospital = hospitals_rank[ranking,"Hospital.Name"],
+                                          state = hospitals_in_state[1,"State"])
         )
     }
     
